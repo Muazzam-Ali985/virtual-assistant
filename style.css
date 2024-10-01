@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   width: 100%;
+   height: 100vh;
+   background-color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   flex-direction: column;
+}
+
+#logo{
+    height: 20vw;
+}
+h1{
+    color: white;
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+#jarvis{
+    color: #00ff00;
+}
+#va{
+    color: #ff0000;
+}
+
+.voice {
+  color: white;
+    width: 50px;
+    aspect-ratio: 1;
+    display: none;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-color: #ccc #0000;
+    animation: l16 1s infinite linear;
+  }
+  .voice::before,
+  .voice::after {    
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+  }
+    .voice::before {
+    border-color: #f03355 #0000;
+    animation: inherit; 
+    animation-duration: .5s;
+    animation-direction: reverse;
+  }
+  .voice::after {
+    margin: 8px;
+  }
+  @keyframes l16 { 
+    100%{transform: rotate(1turn)}
+  }
+  #btn{
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(0, 255, 0), rgb(0, 0, 255));
+    color: white;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0, 255, 0, 0.5), 0 0 20px 0 rgba(0, 0, 255, 0.5);
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  #btn:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 255, 0, 0.5), 0 0 20px 0 rgba(0, 0, 255, 0.5);
+    letter-spacing: 2px;
+  }
